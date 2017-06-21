@@ -237,7 +237,7 @@ L.MeanLayer = (L.Layer ? L.Layer : L.Class).extend({
                     kk=k/cell[3];
 					cell[0] = (cell[0] * cell[2]/cell[3] + p.x * k) / (cell[2]/cell[3] + k); // x
 					cell[1] = (cell[1] * cell[2]/cell[3] + p.y * k) / (cell[2]/cell[3] + k); // y
-					cell[2] += k; // cumulated intensity value
+					cell[2] += k; // mean intensity value
                     cell[3]+=1;
                 }
             }
